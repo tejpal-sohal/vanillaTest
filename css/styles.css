@@ -1,0 +1,126 @@
+/*By Tej Sohal 2017*/
+
+@import url('https://fonts.googleapis.com/css?family=Mada');
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0px;
+  font-family: 'Mada', sans-serif;
+}
+
+header {
+  background-image: -webkit-linear-gradient(#ffffff, #eeeeee 50%, #e4e4e4);
+  background-image: -o-linear-gradient(#ffffff, #eeeeee 50%, #e4e4e4);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(50%, #eeeeee), to(#e4e4e4));
+  background-image: linear-gradient(#ffffff, #eeeeee 50%, #e4e4e4);
+  background-repeat: no-repeat;
+}
+
+
+header ul {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+  text-align: center;
+  color: #fff;
+}
+
+header ul li {
+ background-image: -webkit-linear-gradient(#6d7070, #474949 50%, #3d3f3f);
+ background-image: -o-linear-gradient(#6d7070, #474949 50%, #3d3f3f);
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#6d7070), color-stop(50%, #474949), to(#3d3f3f));
+ background-image: linear-gradient(#6d7070, #474949 50%, #3d3f3f);
+ background-repeat: no-repeat;
+ margin: 0 20px;
+ padding: 10px 30px;
+ display: inline-block;
+}
+
+div.main-logo{
+  content:url(../img/zoopla.png);
+  max-width: 250px;
+  margin: 10px auto;
+}
+
+div.sub ul {
+  background-image: -webkit-linear-gradient(#636565, #3d3f3f 50%, #333434);
+  background-image: -o-linear-gradient(#636565, #3d3f3f 50%, #333434);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#636565), color-stop(50%, #3d3f3f), to(#333434));
+  background-image: linear-gradient(#636565, #3d3f3f 50%, #333434);
+  background-repeat: no-repeat;
+  -webkit-filter: none;
+  filter: none;
+  border: 1px solid #242525;
+  text-align: center;
+  margin: 0px;
+  padding-left: 0px;
+  color: #fff;
+}
+
+div.sub ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+div.content-wrapper{
+  background:#eeeeee;
+  margin: 0 auto;
+  width: 60%;
+  padding: 20px;
+  color: #666666;
+}
+
+div.content-wrapper p {
+  font-family: 'Mada', sans-serif;
+  font-weight: lighter;
+}
+
+div.section{
+  color: #666666;
+  margin: 0 auto;
+  width: 90%;
+  padding: 20px;
+}
+
+div.section div h2{
+  cursor: pointer;
+}
+
+div.section div button.btn {
+    color: #ffffff;
+    background-color: #e51c23;
+    border-color: transparent;
+}
+
+@media screen and (max-width: 980px) {
+  header ul li {
+   border-top: 1px solid black;
+   background-color: green;
+   padding: 10px 30px;
+   display: block;
+   margin: 0;
+  }
+  div.sub ul li {
+    display: block;
+    margin: 10px;
+  }
+  div.content-wrapper{
+    width: 100%;
+  }
+  div.section{
+    width: 100%;
+  }
+  div.main-logo{
+    max-width: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+    div.content-wrapper{
+      width: 75%;
+    }
+}
